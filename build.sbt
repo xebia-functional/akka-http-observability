@@ -22,7 +22,9 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-actor-typed"         % akkaVersion,
       "com.typesafe.akka" %% "akka-stream"              % akkaVersion,
       "ch.qos.logback"    % "logback-classic"           % "1.2.11",
-
+      "io.kamon" %% "kamon-bundle" % "2.5.9",
+      "io.kamon" %% "kamon-opentelemetry" % "2.5.9",
+      "io.kamon" %% "kamon-apm-reporter" % "2.5.9",
       "com.typesafe.akka" %% "akka-http-testkit"        % akkaHttpVersion % Test,
       "com.typesafe.akka" %% "akka-actor-testkit-typed" % akkaVersion     % Test,
       "org.scalatest"     %% "scalatest"                % "3.2.12"        % Test
